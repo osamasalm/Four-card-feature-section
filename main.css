@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(55, 55, 55);
+    background-color: hsl(0, 0%, 98%);
+    padding: 5px;
+}
+
+p {
+    font-weight: 200;
+}
+
+header {
+    margin: 60px auto;
+    max-width: 508px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 200;
+    line-height: 45px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+header .bold{
+    font-weight: 600;
+}
+
+header p{
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+} 
+
+.box {
+    background-color: white;
+    box-shadow: hsl(229, 6%, 66%) 0px 6px 12px -2px, hsl(229, 6%, 66%) 0px 3px 7px -3px;
+    width: 350px;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.box p {
+    margin: 15px 0px 30px;
+    font-size: 14px;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+}
+
+.box1 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    transform: translateY(50%);
+}
+
+.box2 {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.box3 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.box4 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    transform: translateY(50%);
+}
+
+@media (max-width: 770px) {
+    .box1, .box4 {
+        transform: translateY(0%);
+    }
+    header h1 {
+        font-size: 25px;
+    }
+}
